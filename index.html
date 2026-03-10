@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolidWorks工程师</title>
+    <style>
+       
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121212; color: #e0e0e0; line-height: 1.6; }
+        header { text-align: center; padding: 2rem; background: #0d0d0d; }
+        header h1 { color: #0077C0; font-size: 2.5em; margin-bottom: 0.5rem; }
+        header p { color: #aaaaaa; }
+        nav { background: #1a1a1a; padding: 1rem 0; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; }
+        nav a { color: #e0e0e0; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: 0.3s; }
+        nav a:hover { background: #0077C0; color: white; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        .about { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-bottom: 3rem; background: #1a1a1a; padding: 2rem; border-radius: 8px; }
+        .about img { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 3px solid #0077C0; flex-shrink: 0; }
+        .skills { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+        .skill-tag { background: #2a2a2a; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9em; color: #0077C0; border: 1px solid #0077C0; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1.5rem; }
+        .project-card { background: #1a1a1a; border-radius: 8px; overflow: hidden; transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .project-card img { width: 100%; height: 200px; object-fit: cover; }
+        .project-info { padding: 1.2rem; }
+        .project-info h3 { color: #0077C0; margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem; margin-top: 2rem; color: #777; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛠️ SolidWorks 工程师</h1>
+        <p>专注于精密机械设计与3D建模</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#portfolio">作品集</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="home">
+        
+   
+        <section id="about" class="about">
+        
+            <img src="images/SolidWorks.jpg" alt="my head">
+            <div>
+                <h2>关于我</h2>
+                <p>我是王工，一名拥有8年经验的机械设计工程师。我坚信优秀的设计不仅关乎外观，更关乎功能与制造的完美结合。</p>
+                <p>我精通SolidWorks高级曲面建模、运动仿真以及工程图出图，提升研发效率，降低试制成本，赋能产品品质与竞争力。</p>
+                <div class="skills">
+                    <span class="skill-tag">SolidWorks</span>
+                    <span class="skill-tag">CAD设计</span>
+                    <span class="skill-tag">运动仿真</span>
+                    <span class="skill-tag">钣金设计</span>
+                    <span class="skill-tag">工程图</span>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="portfolio">
+            <h2 style="text-align:center; margin-bottom: 2rem; color: white;">我的作品集</h2>
+            <div class="portfolio-grid">
+                
+                
+                <div class="project-card">
+                    
+                    <img src="images/project1.jpg" alt="工业机器人臂">
+                    <div class="project-info">
+                        <h3>工业机器人关节</h3>
+                        <p>高精度减速器与传动结构设计，包含完整的运动算例分析，确保无干涉运行。</p>
+                    </div>
+                </div>
+
+                
+                <div class="project-card">
+                   
+                    <img src="images/project2.jpg" alt="发动机模型">
+                    <div class="project-info">
+                        <h3>四冲程发动机</h3>
+                        <p>参数化设计的发动机模型，包含活塞、曲轴的动态配合，用于教学演示。</p>
+                    </div>
+                </div>
+
+                
+                <div class="project-card">
+                    <!-- 修改4: 作品图片改为本地引用 -->
+                    <img src="images/project3.jpg" alt="消费电子产品">
+                    <div class="project-info">
+                        <h3>便携式充电宝</h3>
+                        <p>消费电子产品的ID结构设计，重点优化了外壳的曲面质感与内部电路板的空间布局。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       
+        <section id="contact" style="text-align: center; padding: 3rem 1rem; background: #1a1a1a; border-radius: 8px; margin: 3rem 0;">
+            <h2>让我们合作</h2>
+            <p style="margin-bottom: 1.5rem;">如果你有设计项目需要帮助，或者想交流技术，请随时联系我。</p>
+            <button onclick="alert('我的邮箱：solidworks2026@qq.com')" style="background: #0077C0; color: white; padding: 0.8rem 2rem; border: none; border-radius: 4px; cursor: pointer; font-size: 1em;">
+    	发送邮件
+</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SolidWorks工程师. 保留所有权利.</p>
+    </footer>
+
+</body>
+</html>
