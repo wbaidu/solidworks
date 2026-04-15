@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolidWorks工程师</title>
+    <title>SolidWorks工程师 | 精密机械设计与3D建模</title>
+    <meta name="description" content="8年经验SolidWorks工程师，专注精密机械设计、3D建模、运动仿真、钣金设计与工程图制作">
     <style>
-       
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121212; color: #e0e0e0; line-height: 1.6; }
-        header { text-align: center; padding: 2rem; background: #0d0d0d; }
-        header h1 { color: #0077C0; font-size: 2.5em; margin-bottom: 0.5rem; }
-        header p { color: #aaaaaa; }
-        nav { background: #1a1a1a; padding: 1rem 0; }
-        nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; }
-        nav a { color: #e0e0e0; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: 0.3s; }
-        nav a:hover { background: #0077C0; color: white; }
-        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
-        .about { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-bottom: 3rem; background: #1a1a1a; padding: 2rem; border-radius: 8px; }
-        .about img { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 3px solid #0077C0; flex-shrink: 0; }
-        .skills { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
-        .skill-tag { background: #2a2a2a; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9em; color: #0077C0; border: 1px solid #0077C0; }
-        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1.5rem; }
-        .project-card { background: #1a1a1a; border-radius: 8px; overflow: hidden; transition: transform 0.3s; }
-        .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-        .project-card img { width: 100%; height: 200px; object-fit: cover; }
-        .project-info { padding: 1.2rem; }
-        .project-info h3 { color: #0077C0; margin-bottom: 0.5rem; }
-        footer { text-align: center; padding: 2rem; margin-top: 2rem; color: #777; font-size: 0.9em; }
+        *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+        body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#121212;color:#e0e0e0;line-height:1.7;overflow-x:hidden}
+        header{text-align:center;padding:3rem 1rem;background:#0d0d0d}
+        header h1{color:#0077C0;font-size:2.5rem;margin-bottom:.8rem}
+        header p{color:#aaaaaa;font-size:1.1rem}
+        nav{background:#1a1a1a;padding:1rem 0;position:sticky;top:0;z-index:99;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+        nav ul{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;gap:1rem;padding:0 1rem}
+        nav a{color:#e0e0e0;text-decoration:none;font-weight:500;padding:.6rem 1.2rem;border-radius:4px;transition:all .3s ease;white-space:nowrap}
+        nav a:hover{background:#0077C0;color:#fff;transform:translateY(-2px)}
+        .container{max-width:1200px;margin:2rem auto;padding:0 1rem}
+        .about{display:flex;flex-wrap:wrap;gap:2.5rem;align-items:center;justify-content:center;margin-bottom:3.5rem;background:#1a1a1a;padding:2.5rem;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.25)}
+        .about img{width:260px;height:260px;border-radius:50%;object-fit:cover;border:3px solid #0077C0;flex-shrink:0;box-shadow:0 0 20px rgba(0,119,192,.2)}
+        .about div{flex:1;min-width:280px}
+        .about h2{color:#fff;margin-bottom:1rem;font-size:1.8rem}
+        .about p{margin-bottom:1rem;font-size:1.05rem}
+        .skills{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.2rem}
+        .skill-tag{background:#2a2a2a;padding:.6rem 1.2rem;border-radius:30px;font-size:.9rem;color:#0099ff;border:1px solid #0077C0;transition:.3s}
+        .skill-tag:hover{background:#0077C0;color:#fff}
+        section h2{text-align:center;margin-bottom:2rem;color:#fff;font-size:1.9rem}
+        .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.8rem}
+        .project-card{background:#1a1a1a;border-radius:12px;overflow:hidden;transition:all .35s ease;box-shadow:0 4px 15px rgba(0,0,0,.2)}
+        .project-card:hover{transform:translateY(-8px);box-shadow:0 12px 25px rgba(0,0,0,.35)}
+        .project-card img{width:100%;height:220px;object-fit:cover;transition:.4s}
+        .project-card:hover img{transform:scale(1.05)}
+        .project-info{padding:1.5rem}
+        .project-info h3{color:#0099ff;margin-bottom:.8rem;font-size:1.3rem}
+        .project-info p{color:#ccc;line-height:1.6}
+        #contact{text-align:center;padding:3.5rem 1.5rem;background:#1a1a1a;border-radius:12px;margin:3.5rem 0;box-shadow:0 4px 20px rgba(0,0,0,.25)}
+        #contact h2{margin-bottom:1rem}
+        #contact p{margin-bottom:1.8rem;max-width:700px;margin-left:auto;margin-right:auto}
+        .qrcode-box{margin:1.5rem auto;max-width:220px;padding:1.2rem;background:#fff;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.2)}
+        .qrcode-box img{width:100%;border-radius:6px}
+        .qrcode-box p{margin-top:.8rem;color:#0077C0;font-weight:500;font-size:1rem}
+        footer{text-align:center;padding:2.5rem 1rem;margin-top:2rem;color:#777;font-size:.95rem;background:#0d0d0d}
+        @media (max-width:768px){header h1{font-size:2rem}.about{padding:2rem 1.5rem;text-align:center}.about img{margin:0 auto}}
     </style>
 </head>
 <body>
@@ -34,22 +48,17 @@
         <h1>🛠️ SolidWorks 工程师</h1>
         <p>专注于精密机械设计与3D建模</p>
     </header>
-
     <nav>
         <ul>
             <li><a href="#home">首页</a></li>
-            <li><a href="#portfolio">作品集</a></li>
             <li><a href="#about">关于我</a></li>
+            <li><a href="#portfolio">作品集</a></li>
             <li><a href="#contact">联系</a></li>
         </ul>
     </nav>
-
     <div class="container" id="home">
-        
-   
         <section id="about" class="about">
-        
-            <img src="images/SolidWorks.jpg" alt="my head">
+            <img src="images/SolidWorks.jpg" alt="SolidWorks工程师头像">
             <div>
                 <h2>关于我</h2>
                 <p>我是王工，一名拥有8年经验的机械设计工程师。我坚信优秀的设计不仅关乎外观，更关乎功能与制造的完美结合。</p>
@@ -63,98 +72,49 @@
                 </div>
             </div>
         </section>
-
-       
         <section id="portfolio">
-            <h2 style="text-align:center; margin-bottom: 2rem; color: white;">我的作品集</h2>
+            <h2>我的作品集</h2>
             <div class="portfolio-grid">
-                
-                
                 <div class="project-card">
-                    
-                    <img src="images/project1.jpg" alt="工业机器人臂">
+                    <img src="images/project1.jpg" alt="工业机器人关节">
                     <div class="project-info">
                         <h3>工业机器人关节</h3>
                         <p>高精度减速器与传动结构设计，包含完整的运动算例分析，确保无干涉运行。</p>
                     </div>
                 </div>
-
-                
                 <div class="project-card">
-                   
-                    <img src="images/project2.jpg" alt="发动机模型">
+                    <img src="images/project2.jpg" alt="四冲程发动机">
                     <div class="project-info">
                         <h3>四冲程发动机</h3>
                         <p>参数化设计的发动机模型，包含活塞、曲轴的动态配合，用于教学演示。</p>
                     </div>
                 </div>
-
-                
                 <div class="project-card">
-                    <!-- 修改4: 作品图片改为本地引用 -->
-                    <img src="images/project3.jpg" alt="消费电子产品">
+                    <img src="images/project3.jpg" alt="便携式充电宝">
                     <div class="project-info">
                         <h3>便携式充电宝</h3>
                         <p>消费电子产品的ID结构设计，重点优化了外壳的曲面质感与内部电路板的空间布局。</p>
                     </div>
                 </div>
-
             </div>
         </section>
-
-       
-        <section id="contact" style="text-align: center; padding: 3rem 1rem; background: #1a1a1a; border-radius: 8px; margin: 3rem 0;">
+        <section id="contact">
             <h2>让我们合作</h2>
-            <p style="margin-bottom: 1.5rem;">如果你有设计项目需要帮助，或者想交流技术，请随时联系我。</p>
-
-    	<div style="margin: 1rem auto; max-width: 200px; padding: 1rem; background: white; border-radius: 8px;">
-        		<img src="images/WeChat-SolidWorks.jpg" alt="微信二维码" style="width: 100%; border-radius: 4px;">
-        		<p style="margin-top: 0.5rem; color: #0077C0; font-size: 0.9em;">长按识别二维码</p>
-    	</div>
-           	 <p style="margin-top: 1rem; color: #aaa;">可发送邮件至: solidworks2026@qq.com</p>
+            <p>如果你有设计项目需要帮助，或者想交流技术，请随时联系我。</p>
+            <div class="qrcode-box">
+                <img src="images/WeChat-SolidWorks.jpg" alt="微信二维码">
+                <p>长按识别二维码</p>
+            </div>
+            <p>可发送邮件至: solidworks2026@qq.com</p>
         </section>
     </div>
-
     <footer>
         <p>&copy; 2026 SolidWorks工程师. 保留所有权利.</p>
     </footer>
     <script>
-
-function shouldNotify() {
-  const isBot = /bot|spider|crawl|slurp|curl|wget/i.test(navigator.userAgent);
-  const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-  const last = localStorage.getItem('lastNotifyTime');
-  const now = Date.now();
-  const cooldown = 10 * 60 * 1000; // 10分钟冷却
-  return !isBot && !isLocal && (!last || now - last > cooldown);
-}
-
-async function sendWechatNotice() {
-  if (!shouldNotify()) return;
-  localStorage.setItem('lastNotifyTime', Date.now());
-
-  const SEND_KEY = 'SCT338616T2GjmuNJR3zALYTmiYIj1iue1';
-
-  const title = '📥 GitHub主页有人访问';
-  const content = `
-**页面：** ${location.href}
-**来源：** ${document.referrer || '直接访问'}
-**时间：** ${new Date().toLocaleString()}
-  `;
-
-  try {
-    await fetch(`https://sctapi.ftqq.com/${SEND_KEY}.send`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ title, desp: content })
-    });
-  } catch (e) {
-    console.log('推送失败', e);
-  }
-}
-
-window.addEventListener('load', sendWechatNotice);
-</script>
-
+        function shouldNotify(){const isBot=/bot|spider|crawl|slurp|curl|wget|baidu|google/i.test(navigator.userAgent);const isLocal=['localhost','127.0.0.1',''].includes(location.hostname);const lastNotifyTime=localStorage.getItem('lastNotifyTime');const now=Date.now();const coolDown=10*60*1000;return!isBot&&!isLocal&&(!lastNotifyTime||now-lastNotifyTime>coolDown)}
+        async function sendWechatNotice(){if(!shouldNotify())return;localStorage.setItem('lastNotifyTime',Date.now());const SEND_KEY='SCT338616T2GjmuNJR3zALYTmiYIj1iue1';const title='📥 GitHub主页有人访问';const content=`**访问页面：** ${location.href}**访问来源：** ${document.referrer||'直接访问'}**访问时间：** ${new Date().toLocaleString('zh-CN')}`;try{await fetch(`https://sctapi.ftqq.com/${SEND_KEY}.send`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({title,desp:content})})}catch(err){console.log('推送服务异常',err)}}
+        window.addEventListener('load',sendWechatNotice);
+    </script>
 </body>
 </html>
