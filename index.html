@@ -118,6 +118,43 @@
     <footer>
         <p>&copy; 2026 SolidWorks工程师. 保留所有权利.</p>
     </footer>
+    <script>
+
+function shouldNotify() {
+  const isBot = /bot|spider|crawl|slurp|curl|wget/i.test(navigator.userAgent);
+  const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+  const last = localStorage.getItem('lastNotifyTime');
+  const now = Date.now();
+  const cooldown = 10 * 60 * 1000; // 10分钟冷却
+  return !isBot && !isLocal && (!last || now - last > cooldown);
+}
+
+async function sendWechatNotice() {
+  if (!shouldNotify()) return;
+  localStorage.setItem('lastNotifyTime', Date.now());
+
+  const SEND_KEY = 'SCT338616T2GjmuNJR3zALYTmiYIj1iue1';
+
+  const title = '📥 GitHub主页有人访问';
+  const content = `
+**页面：** ${location.href}
+**来源：** ${document.referrer || '直接访问'}
+**时间：** ${new Date().toLocaleString()}
+  `;
+
+  try {
+    await fetch(`https://sctapi.ftqq.com/${SEND_KEY}.send`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ title, desp: content })
+    });
+  } catch (e) {
+    console.log('推送失败', e);
+  }
+}
+
+window.addEventListener('load', sendWechatNotice);
+</script>
 
 </body>
 </html>
